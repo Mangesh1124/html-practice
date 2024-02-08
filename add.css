@@ -1,0 +1,16 @@
+<style>
+    #first{
+        background-color: brown;
+    }
+    .second{
+        background-color: gray;
+
+    }
+    #first
+    {
+        color:chartreuse;
+    }
+    .second{
+        color:darkorange;
+    }
+   </style>
