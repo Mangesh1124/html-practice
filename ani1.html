@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            height: 100vh;
+            width: 100vw;
+        }
+        .red
+        {
+            height: 35vh;
+            width: 35vw;
+            position: relative;
+            bottom: 0px;
+           
+        }
+        .blue
+        {
+            position: relative;
+            bottom: 0px;
+            height:106px;
+            width: 103px;
+            left: 588px;
+            top: -11px;
+            animation-name: tire;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+        .blue1
+        {
+            position: relative;
+            bottom: 0px;
+            height:106px;
+            width: 103px;
+            left: 152px;
+            top: -11px;
+            animation-name: tire;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+          
+        .road
+        {
+            background-color: black;
+            height: 21vh;
+            width: 100vw;
+            transform: translate(0px,50vh);
+            transform: skew(50deg);
+            position: absolute;
+            top: 160px;
+
+            /* display: flex;
+                */
+            }
+        .strip
+        
+        {
+            height: 3vh;
+            width: 15vw;
+            background-color: white;
+            position: absolute;
+            left: 193px;
+            top: 52px;
+            animation: car;
+            animation-duration: 400ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+        }
+        .strip1
+        
+        {
+            height: 3vh;
+            width: 15vw;
+            background-color: white;
+            position: absolute;
+            left: 607px;
+            top: 52px;
+            animation: car1;
+            animation-duration: 400ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+        .strip2
+        
+        {
+            height: 3vh;
+            width: 15vw;
+            background-color: white;
+            position: absolute;
+            left: 1045px;
+            top: 52px;
+            animation: car2;
+            animation-duration: 400ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes car {
+            from{
+               position: absolute;
+               left: 193px;
+            }
+            to
+            {
+                left: 61px;
+            }
+            
+          
+            
+        }
+        @keyframes car1 {
+            from{
+               position: absolute;
+               left: 607px;
+            }
+            to
+            {
+                left: 475px;
+            }
+            
+        }  
+        @keyframes car2 {
+            from{
+               position: absolute;
+               left: 1045px;
+            }
+            to
+            {
+                left: 913px;
+            }
+           
+        }  
+
+       
+         @keyframes tire {
+        from{
+            transform: rotate(0deg);
+        }
+        to
+        {
+            transform: rotate(360deg);
+        }
+            
+         }
+     
+    </style>
+</head>
+<body>
+     <div class="container"><div class="road">  <div class="strip"></div><div class="strip1"></div><div class="strip2"></div>div> 
+    </div> 
+    <img src="wheel3-removebg-preview.png" class="blue">
+    <img src="wheel3-removebg-preview.png" class="blue1">
+    <img src="images-removebg-preview.png" alt="logo" class="red">
+  
+</body>
+</html>
