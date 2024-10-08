@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = Math.floor(Math.random() * 100);
+        let b = null
+       
+     do
+    {
+
+        b = Number(prompt("ENTER THE CORRECT NUMBER")); 
+        if(b==a)
+    {
+        alert("HURRAY!!! THE NO. GUESED IS CORRECT")
+    }
+        else if(b>a)
+    {    
+        alert("NO. IS LESS THAN GUESSED NO.")
+
+    }
+      else
+      {
+       alert("THE NO. IS MORE THAN GUESSED NO.")
+      }
+    }while(a!==b)
+    </script>
+</body>
+</html>
